@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quejas / Sugerencias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+  <div class="container"><a class="navbar-brand" href="/">MiBiblioteca</a></div>
+</nav>
+
+<div class="container">
+  <h2>Envíanos una queja o sugerencia</h2>
+  <form th:action="@{/quejas/guardar}" th:object="${queja}" method="post">
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input class="form-control" th:field="*{nombreCliente}" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input class="form-control" th:field="*{email}" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Teléfono</label>
+      <input class="form-control" th:field="*{telefono}" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Tipo</label>
+      <select class="form-select" th:field="*{tipo}">
+        <option th:each="t : ${tipos}" th:value="${t}" th:text="${t}">Tipo</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Asunto</label>
+      <input class="form-control" th:field="*{asunto}" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Mensaje</label>
+      <textarea class="form-control" th:field="*{mensaje}" required></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+</div>
+</body>
+</html>
+
