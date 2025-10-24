@@ -1,3 +1,5 @@
+# Ejercicio Practico_Jose Daniel Ramirez Leiton
+
 Esta informacion tambien estara en el commit que hare con el titulo "Semana 7_Ejercicio Practico #1"
 
 En esta semana realizamos el Ejercicio Practico #1.
