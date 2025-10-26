@@ -15,7 +15,7 @@ Tiene todos los datos necesarios en el pom, tambien en el application.properties
 Tambien le agregue los templates junto con el diseño sencillo que logre hacer en este tiempo que dio.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Profe vieras que el mismo dia del examen yo estuve haciendo unos detalles paraagregarle diseño antes de subirlo, lo raro es que se me subieron dos commits y uno fue hasta hoy que acabo de revisar, como se me partieron en dos, uno con el nombre 
+Profe vieras que el mismo dia del examen yo estuve haciendo unos detalles para agregarle diseño antes de subirlo, lo raro es que se me subieron dos commits y uno fue hasta hoy que acabo de revisar, como se me partieron en dos, uno con el nombre 
 de "Semana 7_Ejercicio Practico #1" y otro con el nombre de "Semana 7_Ejercicio Practico #1_Actualizacion".
 
 Nada mas para que sepa que descargue el archivo este de actualizacion y me habre igual y con todo lo que agregue en el examen, solo que no sale con ningun archivo ni codigo que agregue en el examen, pero si se va a la parte de 6 commits que esta a la par del titulo del cuadro donde esta el README y el netbeans
