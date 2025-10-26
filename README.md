@@ -13,6 +13,7 @@ Tiene todos los package que solicita el PDF junto con sus respectivas clases jav
 Tiene todos los datos necesarios en el pom, tambien en el application.properties junto con mi username y contraseña.
 
 Tambien le agregue los templates junto con el diseño sencillo que logre hacer en este tiempo que dio.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Profe vieras que el mismo dia del examen yo estuve haciendo unos detalles paraagregarle diseño antes de subirlo, lo raro es que se me subieron dos commits y uno fue hasta hoy que acabo de revisar, como se me partieron en dos, uno con el nombre 
 de "Semana 7_Ejercicio Practico #1" y otro con el nombre de "Semana 7_Ejercicio Practico #1_Actualizacion".
