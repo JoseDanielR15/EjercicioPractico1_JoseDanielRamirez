@@ -20,43 +20,94 @@
   </div>
 </nav>
 
-<div class="container">
-  <h1>Bienvenido a Mi Biblioteca</h1>
+<div class="container my-5">
+  <h1 class="text-center mb-4" style="color:#0066cc; font-family: 'Oswald', sans-serif;">Bienvenido a Mi Biblioteca</h1>
 
-  <div th:if="${libroDestacado != null}" class="card my-3">
-    <div class="card-body">
-      <h5 class="card-title" th:text="${libroDestacado.titulo}">Título</h5>
+  <!-- LIBRO DESTACADO -->
+  <div th:if="${libroDestacado != null}" class="card shadow-lg mb-5 border-0">
+    <div class="card-body bg-light rounded">
+      <h5 class="card-title" th:text="${libroDestacado.titulo}" style="color:#004080;">Título del Libro</h5>
       <h6 class="card-subtitle mb-2 text-muted" th:text="${libroDestacado.autor}">Autor</h6>
       <p class="card-text" th:text="${libroDestacado.descripcion}">Descripción del libro destacado</p>
     </div>
   </div>
 
-  <h2>Videos informativos: </h2>
-  <div class="container">
-  <div class="col-sm-12">
-    <h2>Video #1</h2>
-    <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/kDHhKqqlqsc" title="Video" allowfullscreen></iframe>
+  <!-- SECCIÓN DE VIDEOS -->
+  <h2 class="text-center text-dark mb-4">Videos Informativos</h2>
+  <div class="row justify-content-center mb-5">
+
+    <div class="col-md-4 mb-4">
+      <div class="ratio ratio-16x9 shadow-lg">
+        <iframe src="https://www.youtube.com/embed/kDHhKqqlqsc" title="Video #1: Este LIBRO NUNCA fue para NIÑOS | El Principito | Relato y Reflexiones" allowfullscreen></iframe>
+      </div>
+      <p class="text-center mt-2 fw-semibold text-primary">Este LIBRO NUNCA fue para NIÑOS | El Principito | Relato y Reflexiones</p>
     </div>
-    <div class="container">
-  <div class="col-sm-12">
-    <h2>Video #2</h2>
-    <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/2Kf3O2xS354" title="Video: ¿Cómo buscar información en un libro?" allowfullscreen></iframe>
+
+    <div class="col-md-4 mb-4">
+      <div class="ratio ratio-16x9 shadow-lg">
+        <iframe src="https://www.youtube.com/embed/2Kf3O2xS354" title="Video #2: ¿Cómo buscar información en un libro?" allowfullscreen></iframe>
+      </div>
+      <p class="text-center mt-2 fw-semibold text-primary">¿Cómo buscar información en un libro?</p>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="ratio ratio-16x9 shadow-lg">
+        <iframe src="https://www.youtube.com/embed/f1T1U1HgoHw" title="Video #3: Curiosidades sobre Libros" allowfullscreen></iframe>
+      </div>
+      <p class="text-center mt-2 fw-semibold text-primary">Curiosidades Literarias</p>
+    </div>
+  </div>
+
+  <!-- GALERÍA DE LIBROS -->
+  <h2 class="text-center text-dark mb-4">Galería de Libros</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-2 col-sm-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <img src="https://www.libreriainternacional.com/media/catalog/product/9/7/9788466353779_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=535&width=403&canvas=403:535&dpr=1%201x" class="card-img-top" alt="Libros antiguos">
+        <div class="card-body text-center">
+          <p class="card-text fw-semibold">Dune (1)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <img src="https://www.libreriainternacional.com/media/catalog/product/9/7/9788419275813_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=535&width=403&canvas=403:535&dpr=1%201x" class="card-img-top" alt="Libro abierto">
+        <div class="card-body text-center">
+          <p class="card-text fw-semibold">Harry Potter y la cámara secreta</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <img src="https://www.libreriainternacional.com/media/catalog/product/9/7/9791387652128_1_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=535&width=403&canvas=403:535&dpr=1%201x" class="card-img-top" alt="Pila de libros">
+        <div class="card-body text-center">
+          <p class="card-text fw-semibold">Boulevard Libro 01</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <img src="https://www.libreriainternacional.com/media/catalog/product/9/7/9788408299615_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=535&width=403&canvas=403:535&dpr=1%201x" class="card-img-top" alt="Estante de libros">
+        <div class="card-body text-center">
+          <p class="card-text fw-semibold">Acelerando en rojo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <img src="https://www.libreriainternacional.com/media/catalog/product/9/7/9788441552029_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=535&width=403&canvas=403:535&dpr=1%201x" class="card-img-top" alt="Persona leyendo">
+        <div class="card-body text-center">
+          <p class="card-text fw-semibold">Los estoicos</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-    <div class="container">
-  <div class="col-sm-12">
-    <h2>Video #3</h2>
-    <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/TU_ID_DEL_VIDEO_AQUÍ" title="Video #3" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-</div>
+
 
 <footer class="bg-light text-center py-3 mt-4">
   <div class="container"><small>Ejercicio Practico #1 --- Jose Daniel Ramirez</small></div>
